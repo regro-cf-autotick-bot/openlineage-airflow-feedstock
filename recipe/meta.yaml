@@ -1,5 +1,5 @@
 {% set name = "openlineage-airflow" %}
-{% set version = "1.41.0" %}
+{% set version = "1.54.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/OpenLineage/OpenLineage/archive/refs/tags/{{ version }}.tar.gz
-  sha256: fb188ea7ea7316900f5bb67959d95070255d5d8f69d8ba426dc9719003267780
+  sha256: 6a619be5a094f126de1da83419020cb757029c669d9384bac407018d4e3f7101
   patches:
     - patches/fix-dependency-pins.patch
 
